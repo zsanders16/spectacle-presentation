@@ -17,6 +17,7 @@ import {
   Fit,
   Fill,
   Appear,
+  Image,
 } from "spectacle";
 
 // Import image preloader util
@@ -31,12 +32,15 @@ require("spectacle/lib/themes/default/index.css");
 
 
 const images = {
-  thunderstorm: require('../assets/thunderstorm2.jpg'),
+  thunderstorm: require('../assets/thunderstorm.jpg'),
+  thunderstorm2: require('../assets/thunderstorm2.jpg'),
   j5Robot: require('../assets/j5-robot.png'),
   j5Logo: require('../assets/j5-logo.svg'),
   noaa: require('../assets/noaa_logo.png'),
   screenShotA: require('../assets/ScreenShotA.png'),
-  screenShotB: require('../assets/ScreenShotB.png')
+  screenShotB: require('../assets/ScreenShotB.png'),
+  screenShotC: require('../assets/ScreenShotC.png'),
+  screenShotD: require('../assets/ScreenShotD.png'),
 };
 
 preloader(images);
@@ -70,64 +74,64 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
-        <Slide id='Main' transition={['fade','fade']} bgColor="primary" bgImage={images.thunderstorm.replace('/','')}>
-          <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
+        <Slide id='Main' transition={['fade','fade']} bgColor="quartenary" bgImage={images.thunderstorm2.replace('/','')}>
+          <Heading size={4} fit caps lineHeight={4} textColor="primary">
             Weather Station Application
           </Heading>
           <br />
-          <Text margin="10px 0 0" textColor="primary" size={2} fit bold lineHeight={2}>
+          <Text margin="10px 0 0" textColor="secondary" size={2} fit bold lineHeight={2}>
             <Link textSize={26}>{`https://capstone-weather-station.herokuapp.com/`}</Link>
           </Text>
           <Text textColor='quartenary' textSize='2rem'>
             Developers: Z. Sanders, B. Langston, A. Graupman
           </Text>
         </Slide>
-        <Slide id='Objectives' transition={["fade"]} bgColor="primary">
-          <Heading size={1} textColor="secondary" caps fit lineHeight={1}>
+        <Slide id='Objectives' transition={["fade"]} bgColor="quartenary" bgImage={images.thunderstorm2.replace('/','')}>
+          <Heading size={1} textColor="primary" caps fit lineHeight={1}>
             Objectives
           </Heading>
           <List>
             <Appear>
-              <ListItem margin='2rem 0' italic textColor='tertiary' >Acquisition of Realtime Data</ListItem>
+              <ListItem margin='2rem 0' italic textColor='primary' >Acquisition of Realtime Data</ListItem>
             </Appear>
             <Appear>
               <ListItem margin='2rem 0'>Remote Storage of Device Driven Data</ListItem>
             </Appear>
             <Appear>
-              <ListItem margin='2rem 0' italic textColor='tertiary' >Client-side Display of Realtime Data</ListItem>
+              <ListItem margin='2rem 0' italic textColor='primary' >Client-side Display of Realtime Data</ListItem>
             </Appear>
             <Appear>
               <ListItem margin='2rem 0'>Weather Api for Acquiring Historical Data</ListItem>
             </Appear>
             <Appear>
-              <ListItem margin='2rem 0' italic textColor='tertiary' >Realtime and Historical Data Coorelation</ListItem>
+              <ListItem margin='2rem 0' italic textColor='primary' >Realtime and Historical Data Coorelation</ListItem>
             </Appear>
           </List>
         </Slide>
-        <Slide id='Plateforms' transition={["fade",'fade']} bgColor="tertiary">
-          <Heading size={1} textColor="secondary" caps fit lineHeight={1}>
+        <Slide id='Plateforms' transition={["fade",'fade']} bgColor="quartenary" bgImage={images.thunderstorm2.replace('/','')}>
+          <Heading size={1} textColor="primary" caps fit lineHeight={1}>
             Plateforms, Frameworks, and Libraries
           </Heading>
           <List>
             <Appear>
-              <ListItem margin='1.5rem' italic textColor='quartenary'>{`Arduino/Johnny-Five IoT`}</ListItem>
+              <ListItem margin='1.5rem' italic textColor='primary'>{`Arduino/Johnny-Five IoT`}</ListItem>
             </Appear>
             <Appear>
-              <ListItem margin='1.5rem' italic textColor='quartenary'>{`React/Rails`}</ListItem>
+              <ListItem margin='1.5rem' italic textColor='primary'>{`React/Rails`}</ListItem>
             </Appear>
             <Appear>
               <ListItem margin='1.5rem' >Postgresql</ListItem>
             </Appear>
             <Appear>
-              <ListItem margin='1.5rem' italic textColor='quartenary'>HighChart</ListItem>
+              <ListItem margin='1.5rem' italic textColor='primary'>HighChart</ListItem>
             </Appear>
             <Appear>
               <ListItem margin='1.5rem' >Good Dose of Creativity</ListItem>
             </Appear>
           </List>
         </Slide>
-        <Slide id='ScreenShots' transition={["fade"]} bgColor="primary">
-          <Heading size={1} fit caps textColor='tertiary' lineHeight={1}>
+        <Slide id='ScreenShots' transition={["fade"]} bgColor="quartenary"  bgImage={images.thunderstorm2.replace('/','')}>
+          <Heading size={1} fit caps textColor='primary' lineHeight={1}>
             Application Screen Shots
           </Heading>
           <List>
@@ -145,7 +149,7 @@ export default class Presentation extends React.Component {
             </Appear>
           </List>
         </Slide>
-        <Slide transition={['fade']} bgColor='quartenary'>
+        <Slide transition={['fade']} bgColor='quartenary' bgImage={images.thunderstorm2.replace('/','')}>
           <Heading size={1} caps fit textColor='primary' lineHeight={1}>
             Challenges and Hurdles
           </Heading>
@@ -164,8 +168,22 @@ export default class Presentation extends React.Component {
             </Appear>
           </List>
         </Slide>
-        <Slide transition={['fade']} bgImage={images.screenShotA}>
-          <Text>End</Text>
+        <Slide transition={['fade']}  bgImage={images.thunderstorm2.replace('/','')}>
+          <Image src={images.screenShotA.replace("/", "")} ></Image>
+        </Slide>
+        <Slide transition={['fade']}  bgImage={images.thunderstorm2.replace('/','')}>
+          <Image src={images.screenShotB.replace("/", "")} height='650px'></Image>
+        </Slide>
+        <Slide transition={['fade']}  bgImage={images.thunderstorm2.replace('/','')}>
+          <Image src={images.screenShotC.replace("/", "")} height='650px'></Image>
+        </Slide>
+        <Slide transition={['fade']}  bgImage={images.thunderstorm2.replace('/','')}>
+          <Image src={images.screenShotD.replace("/", "")} height='650px'></Image>
+        </Slide>
+        <Slide transition={['fade']}  bgImage={images.thunderstorm2.replace('/','')}>
+          <Heading size={1} caps fit textColor='primary' lineHeight={1}>
+            Come and See Our Booth
+          </Heading>
         </Slide>
       </Deck>
     );
