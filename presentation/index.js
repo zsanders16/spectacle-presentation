@@ -18,6 +18,7 @@ import {
   Fill,
   Appear,
   Image,
+  Code,
 } from "spectacle";
 
 // Import image preloader util
@@ -67,6 +68,12 @@ const styles = {
   fillSlide: {
     height: '100vh !important',
     padding: '0 0 !important',
+  },
+  opacBackground: {
+    backgroundColor: 'black',
+    opacity: '0.5',
+    borderRadius: '10px',
+    padding: '1em 1em',
   }
 }
 
@@ -79,54 +86,62 @@ export default class Presentation extends React.Component {
             Weather Station Application
           </Heading>
           <br />
-          <Text margin="10px 0 0" textColor="secondary" size={2} fit bold lineHeight={2}>
-            <Link textSize={26}>{`https://capstone-weather-station.herokuapp.com/`}</Link>
-          </Text>
-          <Text textColor='quartenary' textSize='2rem'>
-            Developers: Z. Sanders, B. Langston, A. Graupman
-          </Text>
+          <Layout>
+            <Fill style={styles.opacBackground}>
+              <Text margin="10px 0 0" textColor="secondary" size={2} fit bold lineHeight={2}>
+                <Link textSize={26}>{`https://capstone-weather-station.herokuapp.com/`}</Link>
+              </Text>
+              <Text textColor='quartenary' textSize='2rem'>
+                Developers: Z. Sanders, B. Langston, A. Graupman
+              </Text>
+            </Fill>
+          </Layout>
         </Slide>
         <Slide id='Objectives' transition={["fade"]} bgColor="quartenary" bgImage={images.thunderstorm2.replace('/','')}>
-          <Heading size={1} textColor="primary" caps fit lineHeight={1}>
+          <Heading textColor='primary' caps>
             Objectives
           </Heading>
-          <List>
-            <Appear>
-              <ListItem margin='2rem 0' italic textColor='primary' >Acquisition of Realtime Data</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem margin='2rem 0'>Remote Storage of Device Driven Data</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem margin='2rem 0' italic textColor='primary' >Client-side Display of Realtime Data</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem margin='2rem 0'>Weather Api for Acquiring Historical Data</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem margin='2rem 0' italic textColor='primary' >Realtime and Historical Data Coorelation</ListItem>
-            </Appear>
-          </List>
+          <Layout>
+            <Fill>
+              <List style={styles.opacBackground}>
+                <Appear>
+                  <ListItem italic textColor='primary' textSize='1em'>Acquisition of Realtime Data</ListItem>
+                </Appear>
+                <Appear>
+                  <ListItem textColor='primary' textSize='1em'>Remote Storage of Device Driven Data</ListItem>
+                </Appear>
+                <Appear>
+                  <ListItem italic textColor='primary' textSize='1em'>Client-side Display of Realtime Data</ListItem>
+                </Appear>
+                <Appear>
+                  <ListItem textColor='primary' textSize='1em'>Weather Api for Acquiring Historical Data</ListItem>
+                </Appear>
+                <Appear>
+                  <ListItem italic textColor='primary' textSize='1em' >Realtime and Historical Data Coorelation</ListItem>
+                </Appear>
+              </List>
+            </Fill>
+          </Layout>
         </Slide>
         <Slide id='Plateforms' transition={["fade",'fade']} bgColor="quartenary" bgImage={images.thunderstorm2.replace('/','')}>
           <Heading size={1} textColor="primary" caps fit lineHeight={1}>
             Plateforms, Frameworks, and Libraries
           </Heading>
-          <List>
+          <List style={styles.opacBackground}>
             <Appear>
-              <ListItem margin='1.5rem' italic textColor='primary'>{`Arduino/Johnny-Five IoT`}</ListItem>
+              <ListItem italic textColor='primary' textSize='1em'>{`Arduino/Johnny-Five IoT`}</ListItem>
             </Appear>
             <Appear>
-              <ListItem margin='1.5rem' italic textColor='primary'>{`React/Rails`}</ListItem>
+              <ListItem italic textColor='primary' textSize='1em'>{`React/Rails`}</ListItem>
             </Appear>
             <Appear>
-              <ListItem margin='1.5rem' >Postgresql</ListItem>
+              <ListItem textColor='primary' textSize='1em'>Postgresql</ListItem>
             </Appear>
             <Appear>
-              <ListItem margin='1.5rem' italic textColor='primary'>HighChart</ListItem>
+              <ListItem textColor='primary' italic textColor='primary' textSize='1em'>HighChart</ListItem>
             </Appear>
             <Appear>
-              <ListItem margin='1.5rem' >Good Dose of Creativity</ListItem>
+              <ListItem textColor='primary' textSize='1em'>Good Dose of Creativity</ListItem>
             </Appear>
           </List>
         </Slide>
@@ -134,18 +149,18 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit caps textColor='primary' lineHeight={1}>
             Application Screen Shots
           </Heading>
-          <List>
+          <List style={styles.opacBackground}>
             <Appear>
-              <ListItem>Arduino board</ListItem>
+              <ListItem textColor='primary' textSize='1em'>Arduino board</ListItem>
             </Appear>
             <Appear>
-              <ListItem>AdaFruit Sensor</ListItem>
+              <ListItem textColor='primary' textSize='1em'>AdaFruit Sensor</ListItem>
             </Appear>
             <Appear>
-              <ListItem>Arduino Firmware</ListItem>
+              <ListItem textColor='primary' textSize='1em'>Arduino Firmware</ListItem>
             </Appear>
             <Appear>
-              <ListItem>Postgresql Database</ListItem>
+              <ListItem textColor='primary' textSize='1em'>Postgresql Database</ListItem>
             </Appear>
           </List>
         </Slide>
@@ -153,18 +168,18 @@ export default class Presentation extends React.Component {
           <Heading size={1} caps fit textColor='primary' lineHeight={1}>
             Challenges and Hurdles
           </Heading>
-          <List>
+          <List style={styles.opacBackground}>
             <Appear>
-              <ListItem>Reliability of Remote Weather Api</ListItem>
+              <ListItem textColor='primary' textSize='1em'>Reliability of Remote Weather Api</ListItem>
             </Appear>
             <Appear>
-              <ListItem>Race Conditions</ListItem>
+              <ListItem textColor='primary' textSize='1em'>Race Conditions</ListItem>
             </Appear>
             <Appear>
-              <ListItem>Network Access Restrictions</ListItem>
+              <ListItem textColor='primary' textSize='1em'>Network Access Restrictions</ListItem>
             </Appear>
             <Appear>
-              <ListItem>Out-of-Date Arduino/J5 Libraries</ListItem>
+              <ListItem textColor='primary' textSize='1em'>Out-of-Date Arduino/J5 Libraries</ListItem>
             </Appear>
           </List>
         </Slide>
@@ -184,6 +199,15 @@ export default class Presentation extends React.Component {
           <Heading size={1} caps fit textColor='primary' lineHeight={1}>
             Come and See Our Booth
           </Heading>
+          <Layout style={{}}>
+            <Fill>
+              <Appear>
+                <Code textColor="#7CFC00">
+                  weather_app = {}
+                </Code>
+                </Appear>
+            </Fill>
+          </Layout>
         </Slide>
       </Deck>
     );
