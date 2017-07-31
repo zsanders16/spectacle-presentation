@@ -43,6 +43,8 @@ const images = {
   screenShotC: require('../assets/ScreenShotC.png'),
   screenShotD: require('../assets/ScreenShotD.png'),
   currentConditions: require('../assets/CurrentConditions.png'),
+  fiveDayForecast: require('../assets/fiveDayForecast.png'),
+  forecastGraph: require('../assets/forecastGraph.png'),
 };
 
 preloader(images);
@@ -189,6 +191,12 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={['fade']}  bgImage={images.thunderstorm2.replace('/','')}>
           <Image src={images.currentConditions.replace("/", "")} width='100%'></Image>
+        </Slide>
+        <Slide transition={['fade']}  bgImage={images.thunderstorm2.replace('/','')}>
+          <Image src={images.fiveDayForecast.replace("/", "")} width='100%'></Image>
+        </Slide>
+        <Slide transition={['fade']}  bgImage={images.thunderstorm2.replace('/','')}>
+          <Image src={images.forecastGraph.replace("/", "")} width='100%'></Image>
         </Slide>
         <Slide transition={['fade']}  bgImage={images.thunderstorm2.replace('/','')}>
           <Image src={images.screenShotA.replace("/", "")} ></Image>
