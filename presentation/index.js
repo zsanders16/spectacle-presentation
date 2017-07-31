@@ -157,7 +157,7 @@ export default class Presentation extends React.Component {
           </Heading>
           <List style={styles.opacBackground}>
             <Appear>
-              <ListItem textColor='primary' textSize='1em'>Arduino board</ListItem>
+              <ListItem textColor='primary' textSize='1em'>Arduino Uno Board</ListItem>
             </Appear>
             <Appear>
               <ListItem textColor='primary' textSize='1em'>AdaFruit Sensor</ListItem>
@@ -166,7 +166,7 @@ export default class Presentation extends React.Component {
               <ListItem textColor='primary' textSize='1em'>Arduino Firmware</ListItem>
             </Appear>
             <Appear>
-              <ListItem textColor='primary' textSize='1em'>Raspberry Pi</ListItem>
+              <ListItem textColor='primary' textSize='1em'>Raspberry Pi Board</ListItem>
             </Appear>
           </List>
         </Slide>
