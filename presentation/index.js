@@ -42,6 +42,7 @@ const images = {
   screenShotB: require('../assets/ScreenShotB.png'),
   screenShotC: require('../assets/ScreenShotC.png'),
   screenShotD: require('../assets/ScreenShotD.png'),
+  currentConditions: require('../assets/CurrentConditions.png'),
 };
 
 preloader(images);
@@ -185,6 +186,9 @@ export default class Presentation extends React.Component {
               <ListItem textColor='primary' textSize='1em'>Out-of-Date Arduino/J5 Libraries</ListItem>
             </Appear>
           </List>
+        </Slide>
+        <Slide transition={['fade']}  bgImage={images.thunderstorm2.replace('/','')}>
+          <Image src={images.currentConditions.replace("/", "")} width='100%'></Image>
         </Slide>
         <Slide transition={['fade']}  bgImage={images.thunderstorm2.replace('/','')}>
           <Image src={images.screenShotA.replace("/", "")} ></Image>
