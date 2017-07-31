@@ -129,7 +129,7 @@ export default class Presentation extends React.Component {
           </Heading>
           <List style={styles.opacBackground}>
             <Appear>
-              <ListItem italic textColor='primary' textSize='1em'>{`Arduino/Johnny-Five IoT`}</ListItem>
+              <ListItem italic textColor='primary' textSize='1em'>{`RaspberryPi/Arduino/Johnny-Five IoT`}</ListItem>
             </Appear>
             <Appear>
               <ListItem italic textColor='primary' textSize='1em'>{`React/Rails`}</ListItem>
@@ -141,13 +141,16 @@ export default class Presentation extends React.Component {
               <ListItem textColor='primary' italic textColor='primary' textSize='1em'>HighChart</ListItem>
             </Appear>
             <Appear>
+              <ListItem textColor='primary' textSize='1em'>NOAA API</ListItem>
+            </Appear>
+            <Appear>
               <ListItem textColor='primary' textSize='1em'>Good Dose of Creativity</ListItem>
             </Appear>
           </List>
         </Slide>
         <Slide id='ScreenShots' transition={["fade"]} bgColor="quartenary"  bgImage={images.thunderstorm2.replace('/','')}>
           <Heading size={1} fit caps textColor='primary' lineHeight={1}>
-            Application Screen Shots
+            Technologies
           </Heading>
           <List style={styles.opacBackground}>
             <Appear>
@@ -160,7 +163,7 @@ export default class Presentation extends React.Component {
               <ListItem textColor='primary' textSize='1em'>Arduino Firmware</ListItem>
             </Appear>
             <Appear>
-              <ListItem textColor='primary' textSize='1em'>Postgresql Database</ListItem>
+              <ListItem textColor='primary' textSize='1em'>Raspberry Pi</ListItem>
             </Appear>
           </List>
         </Slide>
