@@ -146,7 +146,7 @@ export default class Presentation extends React.Component {
           <Heading textSize={4} fit caps textColor='primary'>
             Technologies
           </Heading>
-          <Icon src={imgaes.PiTech} />
+          <Image src={images.PiTech} />
         </Slide>
         <Slide transition={['fade']} bgColor='quartenary' bgImage={images.thunderstorm2.replace('/','')}>
           <Heading size={1} caps fit textColor='primary' lineHeight={1}>
