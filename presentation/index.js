@@ -193,27 +193,6 @@ export default class Presentation extends React.Component {
           <Image src={images.giphy.replace('/','')} width='100%'></Image>
         </Slide>
         <Slide transition={['fade']}  bgImage={images.thunderstorm2.replace('/','')}>
-          <Image src={images.currentConditions.replace("/", "")} width='100%'></Image>
-        </Slide>
-        <Slide transition={['fade']}  bgImage={images.thunderstorm2.replace('/','')}>
-          <Image src={images.fiveDayForecast.replace("/", "")} width='100%'></Image>
-        </Slide>
-        <Slide transition={['fade']}  bgImage={images.thunderstorm2.replace('/','')}>
-          <Image src={images.forecastGraph.replace("/", "")} width='100%'></Image>
-        </Slide>
-        <Slide transition={['fade']}  bgImage={images.thunderstorm2.replace('/','')}>
-          <Image src={images.screenShotA.replace("/", "")} ></Image>
-        </Slide>
-        <Slide transition={['fade']}  bgImage={images.thunderstorm2.replace('/','')}>
-          <Image src={images.screenShotB.replace("/", "")} height='650px'></Image>
-        </Slide>
-        <Slide transition={['fade']}  bgImage={images.thunderstorm2.replace('/','')}>
-          <Image src={images.screenShotC.replace("/", "")} height='650px'></Image>
-        </Slide>
-        <Slide transition={['fade']}  bgImage={images.thunderstorm2.replace('/','')}>
-          <Image src={images.screenShotD.replace("/", "")} height='650px'></Image>
-        </Slide>
-        <Slide transition={['fade']}  bgImage={images.thunderstorm2.replace('/','')}>
           <Heading size={1} caps fit textColor='primary' lineHeight={1}>
             Questions or Comments?
           </Heading>
