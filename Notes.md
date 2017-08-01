@@ -15,10 +15,10 @@
     + Highcharts is a predefined template for displaying data in graphical manner
 # (B.Langston) How the user interacts with the data
   - Technologies
-    + Arduino Board:
+    + Arduino Board:UNO is the most robust board you can start playing with. The UNO is the most used and documented board of the whole Arduino family.
     + AdaFruit Sensors:
     + Firmata Firmware:
-    + Raspberry Pi 3 Board: 
+    + Raspberry Pi 3 Board:
   - how it is pulled in via the arduino
     + Node
       - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
