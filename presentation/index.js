@@ -144,7 +144,7 @@ export default class Presentation extends React.Component {
               <ListItem textColor='primary' textSize='1em'>PostgreSQL - Data Storage </ListItem>
             </Appear>
             <Appear>
-              <ListItem textColor='primary' italic textColor='primary' textSize='1em'>HighChart - Framework for Displaying Information</ListItem>
+              <ListItem textColor='primary' italic textColor='primary' textSize='1em'>HighChart - Library for Displaying Information</ListItem>
             </Appear>
             <Appear>
               <ListItem textColor='primary' textSize='1em'>NOAA API</ListItem>
