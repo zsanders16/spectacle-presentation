@@ -144,9 +144,13 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide id='ScreenShots' transition={["fade"]} bgColor="quartenary"  bgImage={images.thunderstorm2.replace('/','')}>
           <Heading textSize={4} fit caps textColor='primary'>
-            Technologies
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Technologies&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </Heading>
-          <Image src={images.PiTech} />
+          <Layout>
+            <Fit>
+              <Image src={images.PiTech} width='900px' />
+            </Fit>
+          </Layout>
         </Slide>
         <Slide transition={['fade']} bgColor='quartenary' bgImage={images.thunderstorm2.replace('/','')}>
           <Heading size={1} caps fit textColor='primary' lineHeight={1}>
