@@ -4,7 +4,7 @@
     + focus on data acquisition
     + used external api for acquisition of historical data and remote data
     + create own data for comparison
-# (A.Graupman) Basic Technologies
+# Basic Technologies
   - React/Rails
     + React provides a dynamic client-side interface for improved user experience
     + Rails provides a JSON based Api for data acquisition and modification with
@@ -15,25 +15,25 @@
     + Highcharts is a predefined template for displaying data in graphical manner
 # (B.Langston) How the user interacts with the data
   - Technologies
-    + Arduino Board:UNO is the most robust board you can start playing with. The UNO is the most used and documented board of the whole Arduino family.
-    + AdaFruit Sensors:
-    + Firmata Firmware:
-    + Raspberry Pi 3 Board:
+    + Arduino Uno Boards are the most robust micro-electronic boards. They
+      provide robust electrical diagrams and documentation for a variety of
+      micro-sensor and controllers. The Boards can be interacted with
+      programmatically with various IoT languages (NodeJS).
+    + AdaFruit provides reliable sensors that interface well with arduino boards
+      while requiring minimal electrical modifications.
+    + Firmata Firmware provides communication between node and the electrical
+      hardware.
+    + Raspberry Pi readily interfaces with arduino micro-electronics while providing
+      a minimal operating system that can be used as a middleware environment for
+      remote access to servers.
   - how it is pulled in via the arduino
-    + Node
-      - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
-        Node.js uses an event-driven, non-blocking I/O model that makes it
-        lightweight and efficient.
+    + Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+      Node uses an event-driven, non-blocking I/O model that makes it
+      lightweight and efficient for a variety of applications.
     + Johnny-Five
       - Johnny-Five is the JavaScript Robotics & IoT Platform.
-      - The Internet of things (IoT) is the inter-networking of physical devices,
-        vehicles (also referred to as "connected devices" and "smart devices"),
-        buildings, and other items embedded with electronics, software, sensors,
-        actuators, and network connectivity which enable these objects to collect
-        and exchange data.
-    + PG midleware
-      - OpenSource
-      - Advanced
+      - The Internet of things (IoT) is the inter-networking of physical devices
+        and embedded electronics which enable the collection and exchange of data.
   - how to use the graphs
     + query historic data
     + overlay actual with historic data
