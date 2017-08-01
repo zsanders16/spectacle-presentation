@@ -86,6 +86,10 @@ const styles = {
     opacity: '0.5',
     borderRadius: '10px',
     padding: '1em 1em',
+  },
+  nonOpacBackground: {
+    opacity: '1 !important',
+    color: 'rgba(255,255,255,1) !important',
   }
 }
 
@@ -101,7 +105,7 @@ export default class Presentation extends React.Component {
           </Appear>
             <Layout>
               <Fill style={styles.opacBackground}>
-                <Text margin="10px 0 0" textColor="white" size={2} fit bold lineHeight={2}>
+                <Text margin="10px 0 0" textColor="white" size={2} fit bold lineHeight={2} style={styles.nonOpacBackground}>
                   <Link textColor='white' textSize={26}>{`https://capstone-weather-station.herokuapp.com/`}</Link>
                 </Text>
                 <Text textColor='primary' textSize='2rem'>
