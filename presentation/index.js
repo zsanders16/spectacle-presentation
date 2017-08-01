@@ -45,6 +45,7 @@ const images = {
   currentConditions: require('../assets/CurrentConditions.png'),
   fiveDayForecast: require('../assets/fiveDayForecast.png'),
   forecastGraph: require('../assets/forecastGraph.png'),
+  giphy: require('../assets/giphy2.gif'),
 };
 
 preloader(images);
@@ -151,7 +152,7 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
         <Slide id='ScreenShots' transition={["fade"]} bgColor="quartenary"  bgImage={images.thunderstorm2.replace('/','')}>
-          <Heading size={1} fit caps textColor='primary' lineHeight={1}>
+          <Heading size={4} fit caps textColor='primary'>
             Technologies
           </Heading>
           <List style={styles.opacBackground}>
@@ -162,7 +163,7 @@ export default class Presentation extends React.Component {
               <ListItem textColor='primary' textSize='1em'>AdaFruit Sensor</ListItem>
             </Appear>
             <Appear>
-              <ListItem textColor='primary' textSize='1em'>Arduino Firmware</ListItem>
+              <ListItem textColor='primary' textSize='1em'>Firmata Firmware</ListItem>
             </Appear>
             <Appear>
               <ListItem textColor='primary' textSize='1em'>Raspberry Pi Board</ListItem>
@@ -189,6 +190,9 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
         <Slide transition={['fade']}  bgImage={images.thunderstorm2.replace('/','')}>
+          <Image src={images.giphy.replace('/','')} width='100%'></Image>
+        </Slide>
+        <Slide transition={['fade']}  bgImage={images.thunderstorm2.replace('/','')}>
           <Image src={images.currentConditions.replace("/", "")} width='100%'></Image>
         </Slide>
         <Slide transition={['fade']}  bgImage={images.thunderstorm2.replace('/','')}>
@@ -211,17 +215,12 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={['fade']}  bgImage={images.thunderstorm2.replace('/','')}>
           <Heading size={1} caps fit textColor='primary' lineHeight={1}>
+            Questions or Comments?
+          </Heading>
+          <br />
+          <Heading size={4} caps fit textColor='primary'>
             Come and See Our Booth
           </Heading>
-          <Layout style={{}}>
-            <Fill>
-              <Appear>
-                <Code textColor="#7CFC00">
-                  weather_app = {}
-                </Code>
-                </Appear>
-            </Fill>
-          </Layout>
         </Slide>
       </Deck>
     );

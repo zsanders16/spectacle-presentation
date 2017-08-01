@@ -14,6 +14,11 @@
     + PostgreSQL is a versitial database that works on many different plateforms
     + Highcharts is a predefined template for displaying data in graphical manner
 # (B.Langston) How the user interacts with the data
+  - Technologies
+    + Arduino Board:
+    + AdaFruit Sensors:
+    + Firmata Firmware:
+    + Raspberry Pi 3 Board: 
   - how it is pulled in via the arduino
     + Node
       - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
