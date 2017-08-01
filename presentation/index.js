@@ -148,9 +148,6 @@ export default class Presentation extends React.Component {
             <Appear>
               <ListItem textColor='primary' textSize='1em'>NOAA API</ListItem>
             </Appear>
-            <Appear>
-              <ListItem italic textColor='primary' textSize='1em'>Arduino/Johnny-Five IoT - Realtime Data Collection</ListItem>
-            </Appear>
           </List>
         </Slide>
         <Slide id='ScreenShots' transition={["fade"]} bgColor="quartenary"  bgImage={images.thunderstorm2.replace('/','')}>
