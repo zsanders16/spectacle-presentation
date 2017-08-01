@@ -85,9 +85,11 @@ export default class Presentation extends React.Component {
     return (
       <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
         <Slide id='Main' transition={['fade','fade']} bgColor="quartenary" bgImage={images.thunderstorm2.replace('/','')}>
-          <Heading size={4} fit caps lineHeight={4} textColor="primary">
-            Weather Station Application
-          </Heading>
+          <Appear>
+            <Heading size={4} fit caps lineHeight={4} textColor="primary">
+              Weather Station Application
+            </Heading>
+          </Appear>
           <br />
           <Layout>
             <Fill style={styles.opacBackground}>
@@ -108,16 +110,16 @@ export default class Presentation extends React.Component {
             <Fill>
               <List style={styles.opacBackground}>
                 <Appear>
+                  <ListItem textColor='primary' textSize='1em'>Weather Api for Acquiring Current and Historical Data</ListItem>
+                </Appear>
+                <Appear>
+                  <ListItem italic textColor='primary' textSize='1em'>Client-side Selection of How Data is Displayed</ListItem>
+                </Appear>
+                <Appear>
                   <ListItem italic textColor='primary' textSize='1em'>Acquisition of Realtime Data</ListItem>
                 </Appear>
                 <Appear>
-                  <ListItem textColor='primary' textSize='1em'>Remote Storage of Device Driven Data</ListItem>
-                </Appear>
-                <Appear>
                   <ListItem italic textColor='primary' textSize='1em'>Client-side Display of Realtime Data</ListItem>
-                </Appear>
-                <Appear>
-                  <ListItem textColor='primary' textSize='1em'>Weather Api for Acquiring Historical Data</ListItem>
                 </Appear>
                 <Appear>
                   <ListItem italic textColor='primary' textSize='1em' >Realtime and Historical Data Coorelation</ListItem>
@@ -132,22 +134,22 @@ export default class Presentation extends React.Component {
           </Heading>
           <List style={styles.opacBackground}>
             <Appear>
-              <ListItem italic textColor='primary' textSize='1em'>{`RaspberryPi/Arduino/Johnny-Five IoT`}</ListItem>
+              <ListItem italic textColor='primary' textSize='1em'>React - Frontend User Interaction </ListItem>
             </Appear>
             <Appear>
-              <ListItem italic textColor='primary' textSize='1em'>{`React/Rails`}</ListItem>
+              <ListItem italic textColor='primary' textSize='1em'>Rails - Backend Server for Data Manipulation </ListItem>
             </Appear>
             <Appear>
-              <ListItem textColor='primary' textSize='1em'>Postgresql</ListItem>
+              <ListItem textColor='primary' textSize='1em'>PostgreSQL - Data Storage </ListItem>
             </Appear>
             <Appear>
-              <ListItem textColor='primary' italic textColor='primary' textSize='1em'>HighChart</ListItem>
+              <ListItem textColor='primary' italic textColor='primary' textSize='1em'>HighChart - Framework for Displaying Information</ListItem>
             </Appear>
             <Appear>
               <ListItem textColor='primary' textSize='1em'>NOAA API</ListItem>
             </Appear>
             <Appear>
-              <ListItem textColor='primary' textSize='1em'>Good Dose of Creativity</ListItem>
+              <ListItem italic textColor='primary' textSize='1em'>Arduino/Johnny-Five IoT - Realtime Data Collection</ListItem>
             </Appear>
           </List>
         </Slide>
