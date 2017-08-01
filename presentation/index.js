@@ -19,6 +19,9 @@ import {
   Appear,
   Image,
   Code,
+  Table,
+  TableRow,
+  TableItem,
 } from "spectacle";
 
 // Import image preloader util
@@ -48,6 +51,8 @@ const images = {
   giphy: require('../assets/giphy2.gif'),
   TechStack: require('../assets/TechStack.png'),
   PiTech: require('../assets/PiTech.png'),
+  arduino: require('../assets/Arduino_Logo.svg'),
+  pi: require('../assets/Raspberry_Pi_Logo.svg'),
 };
 
 preloader(images);
@@ -138,23 +143,10 @@ export default class Presentation extends React.Component {
           <Image src={images.TechStack} width='100%' style={{marginBottom: '100px'}}></Image>
         </Slide>
         <Slide id='ScreenShots' transition={["fade"]} bgColor="quartenary"  bgImage={images.thunderstorm2.replace('/','')}>
-          <Heading size={4} fit caps textColor='primary'>
+          <Heading textSize={4} fit caps textColor='primary'>
             Technologies
           </Heading>
-          <List style={styles.opacBackground}>
-            <Appear>
-              <ListItem textColor='primary' textSize='1em'>Arduino Uno Board</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem textColor='primary' textSize='1em'>AdaFruit Sensor</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem textColor='primary' textSize='1em'>Firmata Firmware</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem textColor='primary' textSize='1em'>Raspberry Pi Board</ListItem>
-            </Appear>
-          </List>
+          <Icon src={imgaes.PiTech} />
         </Slide>
         <Slide transition={['fade']} bgColor='quartenary' bgImage={images.thunderstorm2.replace('/','')}>
           <Heading size={1} caps fit textColor='primary' lineHeight={1}>
