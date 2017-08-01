@@ -97,7 +97,7 @@ export default class Presentation extends React.Component {
                 <Link textSize={26}>{`https://capstone-weather-station.herokuapp.com/`}</Link>
               </Text>
               <Text textColor='quartenary' textSize='2rem'>
-                Developers: Z. Sanders, B. Langston, A. Graupman
+                Developers: Zack Sanders, Brennick Langston
               </Text>
             </Fill>
           </Layout>
@@ -110,7 +110,7 @@ export default class Presentation extends React.Component {
             <Fill>
               <List style={styles.opacBackground}>
                 <Appear>
-                  <ListItem textColor='primary' textSize='1em'>Weather Api for Acquiring Current and Historical Data</ListItem>
+                  <ListItem textColor='primary' textSize='1em'>External Api for Acquiring Data</ListItem>
                 </Appear>
                 <Appear>
                   <ListItem italic textColor='primary' textSize='1em'>Client-side Selection of How Data is Displayed</ListItem>
@@ -122,7 +122,7 @@ export default class Presentation extends React.Component {
                   <ListItem italic textColor='primary' textSize='1em'>Client-side Display of Realtime Data</ListItem>
                 </Appear>
                 <Appear>
-                  <ListItem italic textColor='primary' textSize='1em' >Realtime and Historical Data Coorelation</ListItem>
+                  <ListItem italic textColor='primary' textSize='1em' >Coorelation of Data from Two Sources</ListItem>
                 </Appear>
               </List>
             </Fill>
