@@ -46,6 +46,8 @@ const images = {
   fiveDayForecast: require('../assets/fiveDayForecast.png'),
   forecastGraph: require('../assets/forecastGraph.png'),
   giphy: require('../assets/giphy2.gif'),
+  TechStack: require('../assets/TechStack.png'),
+  PiTech: require('../assets/PiTech.png'),
 };
 
 preloader(images);
@@ -54,7 +56,8 @@ const theme = createTheme({
   primary: "white",
   secondary: "#1F2022",
   tertiary: "#03A9FC",
-  quartenary: "#CECECE"
+  quartenary: "#CECECE",
+  white: '#f9fcf7',
 }, {
   primary: "Montserrat",
   secondary: "Helvetica"
@@ -87,21 +90,20 @@ export default class Presentation extends React.Component {
       <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
         <Slide id='Main' transition={['fade','fade']} bgColor="quartenary" bgImage={images.thunderstorm2.replace('/','')}>
           <Appear>
-            <Heading size={4} fit caps lineHeight={4} textColor="primary">
+            <Heading  size={4} fit caps lineHeight={4} textColor="white">
               Weather Station Application
             </Heading>
           </Appear>
-          <br />
-          <Layout>
-            <Fill style={styles.opacBackground}>
-              <Text margin="10px 0 0" textColor="secondary" size={2} fit bold lineHeight={2}>
-                <Link textSize={26}>{`https://capstone-weather-station.herokuapp.com/`}</Link>
-              </Text>
-              <Text textColor='quartenary' textSize='2rem'>
-                Developers: Zack Sanders, Brennick Langston
-              </Text>
-            </Fill>
-          </Layout>
+            <Layout>
+              <Fill style={styles.opacBackground}>
+                <Text margin="10px 0 0" textColor="white" size={2} fit bold lineHeight={2}>
+                  <Link textColor='white' textSize={26}>{`https://capstone-weather-station.herokuapp.com/`}</Link>
+                </Text>
+                <Text textColor='primary' textSize='2rem'>
+                  Developers: Zack Sanders, Brennick Langston
+                </Text>
+              </Fill>
+            </Layout>
         </Slide>
         <Slide id='Objectives' transition={["fade"]} bgColor="quartenary" bgImage={images.thunderstorm2.replace('/','')}>
           <Heading textColor='primary' caps>
@@ -130,26 +132,10 @@ export default class Presentation extends React.Component {
           </Layout>
         </Slide>
         <Slide id='Plateforms' transition={["fade",'fade']} bgColor="quartenary" bgImage={images.thunderstorm2.replace('/','')}>
-          <Heading size={1} textColor="primary" caps fit lineHeight={1}>
+          <Heading textColor="primary" caps fit >
             Plateforms, Frameworks, and Libraries
           </Heading>
-          <List style={styles.opacBackground}>
-            <Appear>
-              <ListItem italic textColor='primary' textSize='1em'>React - Frontend User Interaction </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem italic textColor='primary' textSize='1em'>Rails - Backend Server for Data Manipulation </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem textColor='primary' textSize='1em'>PostgreSQL - Data Storage </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem textColor='primary' italic textColor='primary' textSize='1em'>HighChart - Library for Displaying Information</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem textColor='primary' textSize='1em'>NOAA API</ListItem>
-            </Appear>
-          </List>
+          <Image src={images.TechStack} width='100%' style={{marginBottom: '100px'}}></Image>
         </Slide>
         <Slide id='ScreenShots' transition={["fade"]} bgColor="quartenary"  bgImage={images.thunderstorm2.replace('/','')}>
           <Heading size={4} fit caps textColor='primary'>
