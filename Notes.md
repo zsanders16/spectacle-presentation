@@ -1,4 +1,4 @@
-# (Z.Sanders) Why a weather app and objective
+l# (Z.Sanders) Why a weather app and objective
   - Why a weather application
     + what skill set we wanted to learn
     + focus on data acquisition
@@ -46,17 +46,17 @@
     + Storage from several different devices and locations
   - RaspberryPi wireless hub for data uploading to a remote database
 
-There are four basic technologies that were implemented in the developmental
+There are basic technologies that were implemented in the developmental
 process of the weather station app. The first and foremost, was the use of
 versatile Arduino Uno micro-electronic board. The board is extremely compatible
 with a variety of IoT (Internet of Things) programming languages which attributes
-the vast number of sensors and micro-boards that it can be coupled with. Amongst
+to the vast number of sensors and micro-boards that it can be coupled with. Amongst
 the possibilities, AdaFruit sensors are some of the most reliable and easily
 coupled. When they are connected to a Raspberry Pi micro-controller, a powerful
 trio is formed that allows for local weather data to be remotely stored and
 later retrieved for analysis and historical comparison.
 
-However, use of this technology does not come with certain costs that must be
+However, use of this technology does come with certain costs that must be
 addressed before a working system can be established. Remote APIs housing
 historical weather data must be reliable and easily accessible. Client-side
 race conditions must be addressed in order to correlate actual and historical

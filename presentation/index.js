@@ -36,23 +36,11 @@ require("spectacle/lib/themes/default/index.css");
 
 
 const images = {
-  thunderstorm: require('../assets/thunderstorm.jpg'),
   thunderstorm2: require('../assets/thunderstorm2.jpg'),
-  j5Robot: require('../assets/j5-robot.png'),
-  j5Logo: require('../assets/j5-logo.svg'),
-  noaa: require('../assets/noaa_logo.png'),
-  screenShotA: require('../assets/ScreenShotA.png'),
-  screenShotB: require('../assets/ScreenShotB.png'),
-  screenShotC: require('../assets/ScreenShotC.png'),
-  screenShotD: require('../assets/ScreenShotD.png'),
-  currentConditions: require('../assets/CurrentConditions.png'),
-  fiveDayForecast: require('../assets/fiveDayForecast.png'),
-  forecastGraph: require('../assets/forecastGraph.png'),
   giphy: require('../assets/giphy2.gif'),
   TechStack: require('../assets/TechStack.png'),
   PiTech: require('../assets/PiTech.png'),
-  arduino: require('../assets/Arduino_Logo.svg'),
-  pi: require('../assets/Raspberry_Pi_Logo.svg'),
+  technologies: require('../assets/technologies.png'),
 };
 
 preloader(images);
@@ -145,6 +133,12 @@ export default class Presentation extends React.Component {
             Plateforms, Frameworks, and Libraries
           </Heading>
           <Image src={images.TechStack} width='100%' style={{marginBottom: '100px'}}></Image>
+        </Slide>
+        <Slide id='Plateforms' transition={["fade",'fade']} bgColor="quartenary" bgImage={images.thunderstorm2.replace('/','')}>
+          <Heading textColor="primary" caps fit >
+            Weather Station Electronic Devices
+          </Heading>
+          <Image src={images.electronics} width='100%' style={{marginBottom: '100px'}}></Image>
         </Slide>
         <Slide id='ScreenShots' transition={["fade"]} bgColor="quartenary"  bgImage={images.thunderstorm2.replace('/','')}>
           <Heading textSize={4} fit caps textColor='primary'>
