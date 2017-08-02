@@ -37,7 +37,7 @@ require("spectacle/lib/themes/default/index.css");
 
 const images = {
   thunderstorm2: require('../assets/thunderstorm2.jpg'),
-  giphy: require('../assets/giphy2.gif'),
+  gifSlides: require('../assets/gifSlides.gif'),
   TechStack: require('../assets/TechStack.png'),
   technologies: require('../assets/technologies.png'),
 };
@@ -161,7 +161,7 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
         <Slide transition={['fade']}  bgImage={images.thunderstorm2.replace('/','')}>
-          <Image src={images.giphy.replace('/','')} width='100%'></Image>
+          <Image src={images.gifSlides.replace('/','')} width='100%'></Image>
         </Slide>
         <Slide transition={['fade']}  bgImage={images.thunderstorm2.replace('/','')}>
           <Heading size={1} caps fit textColor='primary' lineHeight={1}>
