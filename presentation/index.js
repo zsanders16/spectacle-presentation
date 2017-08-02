@@ -133,7 +133,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide id='Plateforms' transition={["fade",'fade']} bgColor="quartenary" bgImage={images.thunderstorm2.replace('/','')}>
           <Heading textColor="primary" caps fit >
-            Plateforms, Frameworks, and Libraries
+            Platforms, Frameworks, and Libraries
           </Heading>
           <Image src={images.TechStack} width='100%' style={{marginBottom: '100px'}}></Image>
         </Slide>
