@@ -39,7 +39,6 @@ const images = {
   thunderstorm2: require('../assets/thunderstorm2.jpg'),
   giphy: require('../assets/giphy2.gif'),
   TechStack: require('../assets/TechStack.png'),
-  PiTech: require('../assets/PiTech.png'),
   technologies: require('../assets/technologies.png'),
 };
 
@@ -78,6 +77,10 @@ const styles = {
   nonOpacBackground: {
     opacity: '1 !important',
     color: 'rgba(255,255,255,1) !important',
+  },
+  technologies: {
+    padding: '0 !important',
+    margin: '0 !important',
   }
 }
 
@@ -134,21 +137,9 @@ export default class Presentation extends React.Component {
           </Heading>
           <Image src={images.TechStack} width='100%' style={{marginBottom: '100px'}}></Image>
         </Slide>
-        <Slide id='Plateforms' transition={["fade",'fade']} bgColor="quartenary" bgImage={images.thunderstorm2.replace('/','')}>
-          <Heading textColor="primary" caps fit >
-            Weather Station Electronic Devices
-          </Heading>
-          <Image src={images.electronics} width='100%' style={{marginBottom: '100px'}}></Image>
-        </Slide>
-        <Slide id='ScreenShots' transition={["fade"]} bgColor="quartenary"  bgImage={images.thunderstorm2.replace('/','')}>
-          <Heading textSize={4} fit caps textColor='primary'>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Technologies&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          </Heading>
-          <Layout>
-            <Fit>
-              <Image src={images.PiTech} width='1200px' />
-            </Fit>
-          </Layout>
+        <Slide
+          id='Technologies' transition={["fade"]}
+          bgImage={images.technologies.replace('/','')}>
         </Slide>
         <Slide transition={['fade']} bgColor='quartenary' bgImage={images.thunderstorm2.replace('/','')}>
           <Heading size={1} caps fit textColor='primary' lineHeight={1}>
