@@ -45,3 +45,28 @@
   - User can store local data and compare
     + Storage from several different devices and locations
   - RaspberryPi wireless hub for data uploading to a remote database
+
+There are four basic technologies that were implemented in the developmental
+process of the weather station app. The first and foremost, was the use of
+versatile Arduino Uno micro-electronic board. The board is extremely compatible
+with a variety of IoT (Internet of Things) programming languages which attributes
+the vast number of sensors and micro-boards that it can be coupled with. Amongst
+the possibilities, AdaFruit sensors are some of the most reliable and easily
+coupled. When they are connected to a Raspberry Pi micro-controller, a powerful
+trio is formed that allows for local weather data to be remotely stored and
+later retrieved for analysis and historical comparison.
+
+However, use of this technology does not come with certain costs that must be
+addressed before a working system can be established. Remote APIs housing
+historical weather data must be reliable and easily accessible. Client-side
+race conditions must be addressed in order to correlate actual and historical
+data, while taking into account network delivery lag times. Out-of-date
+Iot libraries must also be trouble shoot in order to programmatically load
+real-time data to remote databases and API servers.
+
+- Current location weather forecast for selected cities
+- Extended weather forecast for selected cities
+- Overlay of temperature data for comparison between selected cites
+- Real-time remote data acquisition
+- Actual and historical data comparison
+- More of the same with historical data.
