@@ -58,3 +58,8 @@ l# (Z.Sanders) Why a weather app and objective
   - Real-time remote data acquisition
   - Actual and historical data comparison
   - More of the same with historical data.
+
+  1. Compatibility with IoT (Internet of Things) languages
+  2. Inter-operability
+  3. Controllability
+  

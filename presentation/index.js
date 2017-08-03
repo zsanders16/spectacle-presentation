@@ -153,9 +153,6 @@ export default class Presentation extends React.Component {
               <ListItem textColor='primary' textSize='1em'>Race Conditions</ListItem>
             </Appear>
             <Appear>
-              <ListItem textColor='primary' textSize='1em'>Network Access Restrictions</ListItem>
-            </Appear>
-            <Appear>
               <ListItem textColor='primary' textSize='1em'>Out-of-Date Arduino/J5 Libraries</ListItem>
             </Appear>
           </List>
@@ -168,8 +165,8 @@ export default class Presentation extends React.Component {
             Questions or Comments?
           </Heading>
           <br />
-          <Heading size={4} caps fit textColor='primary'>
-            Come and See Our Booth
+          <Heading size={1} caps fit textColor='primary'>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Come and See Our Booth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </Heading>
         </Slide>
       </Deck>
